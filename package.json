@@ -4,13 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "next build",
     "postinstall": "prisma generate",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db": "prisma studio --experimental",
+    "db-save": "prisma migrate save --experimental",
+    "db-up": "prisma migrate up --experimental",
+    "generate": "prisma generate"
   },
   "dependencies": {
-    "@prisma/client": "^5.0.0",
+
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",
     "@types/react-dom": "18.2.7",
@@ -26,6 +30,7 @@
   },
   "devDependencies": {
     "prisma": "5.0.0",
-    "ts-standard": "^12.0.2"
+    "ts-standard": "^12.0.2",
+    "@prisma/client": "5.0.0"
   }
 }
