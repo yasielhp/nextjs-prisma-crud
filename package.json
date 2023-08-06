@@ -14,7 +14,6 @@
     "generate": "prisma generate"
   },
   "dependencies": {
-
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",
     "@types/react-dom": "18.2.7",
@@ -29,8 +28,8 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "prisma": "5.0.0",
-    "ts-standard": "^12.0.2",
-    "@prisma/client": "5.0.0"
+    "@prisma/client": "^5.1.1",
+    "prisma": "^5.1.1",
+    "ts-standard": "^12.0.2"
   }
 }
